@@ -44,14 +44,14 @@
             
             <h3>Topologia Lógica da Rede</h3>
             <div class="image-container">
-                <img src="assets/imagem-topologia.png" alt="Topologia lógica da rede do laboratório">
+                <img src="assets/topologia.jpeg" alt="Topologia lógica da rede do laboratório">
                 <p class="caption">Mapa lógico da rede local (arquivo .imn exportado). <strong>Técnico responsável:</strong> [Seu Nome]</p>
             </div>
 
             <h3>Mapa Físico do Laboratório</h3>
             <div class="image-container">
                 <img src="assets/mapa-laboratorio.png" alt="Mapa físico do laboratório">
-                <p class="caption">Layout físico do laboratório com posicionamento de equipamentos.</p>
+                <p class="caption">Layout físico do laboratório com posicionamento de equipamentos e estações de trabalho.</p>
             </div>
 
             <h3>Tecnologias Incluídas no Projeto:</h3>
@@ -62,49 +62,122 @@
                 <li><strong>Firewall e Gateway:</strong> Proteção de dados sensíveis e conformidade com LGPD.</li>
                 <li><strong>Nobreak e refrigeração:</strong> Garantia de continuidade e preservação de equipamentos.</li>
                 <li><strong>Cabeamento estruturado Cat 6:</strong> Suporte a 10 Gbps para transferência de grandes volumes de dados.</li>
+                <li><strong>6 notebooks para pesquisa móvel:</strong> Permitir trabalho remoto e coleta de dados em campo.</li>
             </ul>
         </section>
 
         <section id="equipamentos">
             <h2><i class="fas fa-server"></i> Equipamentos Previstos</h2>
-            <p>Com base no orçamento anexo, os principais equipamentos são:</p>
+            <p>Com base no orçamento anexo e necessidades do laboratório (taxa de conversão: 1 USD = R$ 5,50):</p>
+            
+            <h3>Equipamentos de Rede</h3>
             <table>
                 <tr>
                     <th>Equipamento</th>
                     <th>Descrição</th>
                     <th>Quantidade</th>
+                    <th>Preço Unitário (USD)</th>
                     <th>Preço Total (USD)</th>
+                    <th>Preço Total (BRL)</th>
                 </tr>
                 <tr>
                     <td>ERM-11</td>
                     <td>Omada VPN Gateway com 100 portas</td>
                     <td>1</td>
                     <td>250.00</td>
+                    <td>250.00</td>
+                    <td>R$ 1.375,00</td>
                 </tr>
                 <tr>
                     <td>SOS4280/APP</td>
                     <td>Switch 24 portas Gigabit</td>
                     <td>1</td>
                     <td>700.00</td>
+                    <td>700.00</td>
+                    <td>R$ 3.850,00</td>
                 </tr>
                 <tr>
                     <td>EAP787</td>
                     <td>Access Point Wi-Fi 6</td>
                     <td>6</td>
-                    <td>1800.00</td>
+                    <td>300.00</td>
+                    <td>1.800.00</td>
+                    <td>R$ 9.900,00</td>
                 </tr>
                 <tr>
                     <td>Cabo CAT 6</td>
                     <td>Cabos para infraestrutura</td>
                     <td>104m</td>
+                    <td>1.00/m</td>
                     <td>104.00</td>
+                    <td>R$ 572,00</td>
                 </tr>
                 <tr>
-                    <td colspan="3"><strong>Total estimado</strong></td>
-                    <td><strong>USD 2,854.00</strong></td>
+                    <td colspan="4"><strong>Subtotal Rede</strong></td>
+                    <td><strong>USD 2.854,00</strong></td>
+                    <td><strong>R$ 15.697,00</strong></td>
                 </tr>
             </table>
-            <p><em>Valores conforme tabela do orçamento fornecido.</em></p>
+
+            <h3>Estações de Trabalho</h3>
+            <table>
+                <tr>
+                    <th>Equipamento</th>
+                    <th>Descrição</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário (BRL)</th>
+                    <th>Preço Total (BRL)</th>
+                </tr>
+                <tr>
+                    <td>Notebook Pesquisa</td>
+                    <td>Notebook Dell/HP com 16GB RAM, SSD 512GB, processador i5</td>
+                    <td>6</td>
+                    <td>R$ 4.200,00</td>
+                    <td>R$ 25.200,00</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Subtotal Estações</strong></td>
+                    <td><strong>R$ 25.200,00</strong></td>
+                </tr>
+            </table>
+
+            <h3>Resumo do Investimento</h3>
+            <table class="summary">
+                <tr>
+                    <th>Categoria</th>
+                    <th>Valor em BRL</th>
+                </tr>
+                <tr>
+                    <td>Equipamentos de Rede</td>
+                    <td>R$ 15.697,00</td>
+                </tr>
+                <tr>
+                    <td>6 Notebooks para Pesquisa</td>
+                    <td>R$ 25.200,00</td>
+                </tr>
+                <tr>
+                    <td>Instalação e Configuração (10%)</td>
+                    <td>R$ 4.089,70</td>
+                </tr>
+                <tr class="total-row">
+                    <td><strong>INVESTIMENTO TOTAL</strong></td>
+                    <td><strong>R$ 44.986,70</strong></td>
+                </tr>
+            </table>
+            
+            <p><em>*Valores estimados com base em pesquisa de mercado. Taxa de câmbio: USD 1,00 = R$ 5,50</em></p>
+            
+            <div class="justification">
+                <h4><i class="fas fa-lightbulb"></i> Justificativa para os Notebooks</h4>
+                <p>Os 6 notebooks permitirão:</p>
+                <ul>
+                    <li><strong>Pesquisa em campo:</strong> Coleta de dados em audiências, tribunais e instituições parceiras</li>
+                    <li><strong>Mobilidade:</strong> Trabalho remoto e participação em eventos científicos</li>
+                    <li><strong>Simulações jurídicas:</strong> Testes de plataformas e softwares especializados</li>
+                    <li><strong>Backup distribuído:</strong> Redundância de dados importantes da pesquisa</li>
+                    <li><strong>Treinamento:</strong> Capacitação de novos pesquisadores do grupo</li>
+                </ul>
+            </div>
         </section>
 
         <section id="resultados">
@@ -115,6 +188,7 @@
                 <li>Ambiente estável para análise de grandes volumes de dados jurídicos (jurimetria).</li>
                 <li>Disponibilização de plataforma online para consulta pública de pesquisas e materiais educativos antidiscriminatórios.</li>
                 <li>Redução de custos com manutenção e energia devido à infraestrutura moderna e eficiente.</li>
+                <li><strong>Pesquisa móvel:</strong> Capacidade de coleta e análise de dados em tempo real durante trabalhos de campo.</li>
             </ul>
         </section>
 
@@ -127,6 +201,7 @@
                 <li><strong>Escalabilidade:</strong> Capacidade de expandir recursos computacionais conforme demanda.</li>
                 <li><strong>Economia de custos:</strong> Divisão de despesas com infraestrutura física e lógica.</li>
                 <li><strong>Interdisciplinaridade:</strong> Facilidade de colaboração com grupos de outras áreas (Ciência da Computação, Estatística, etc.).</li>
+                <li><strong>Gestão centralizada dos notebooks:</strong> Controle de inventário, updates de segurança e backup via infraestrutura compartilhada.</li>
             </ul>
             <p>Com o condomínio, o CEPEJE poderá focar seus recursos em pesquisa, enquanto a infraestrutura é gerida de forma coletiva e eficiente.</p>
         </section>
@@ -134,16 +209,17 @@
         <section id="contato">
             <h2><i class="fas fa-envelope"></i> Contato</h2>
             <p><strong>Responsável:</strong> Ilzver de Matos Oliveira</p>
-            <p><strong>E-mail institucional:</strong> [e-mail do responsável]</p>
-            <p><strong>GitHub do projeto:</strong> <a href="https://github.com/[seu-usuario]/cepeje-rede" target="_blank">github.com/[seu-usuario]/cepeje-rede</a></p>
-            <p><strong>Técnico responsável pelo projeto de rede:</strong> [Seu Nome]</p>
+            <p><strong>E-mail institucional:</strong> joaoex15@academico.com.ufs</p>
+            <p><strong>GitHub do projeto:</strong> <a href="https://github.com/joaoex15/LAB_REDES" target="_blank">github.com/[seu-usuario]/cepeje-rede</a></p>
+            <p><strong>Técnico responsável pelo projeto de rede:</strong> João Santos Rocha</p>
+            <p><strong>Valor total do projeto:</strong> <strong class="highlight">R$ 44.986,70</strong> (incluindo 6 notebooks e infraestrutura de rede)</p>
         </section>
     </main>
 
     <footer>
         <div class="container">
             <p>CEPEJE Antidiscriminação &copy; 2025 - Universidade Federal de Sergipe</p>
-            <p>Projeto de Infraestrutura de Rede - Laboratório de Pesquisa</p>
+            <p>Projeto de Infraestrutura de Rede - Laboratório de Pesquisa | Investimento Total: R$ 44.986,70</p>
             <p><i class="fas fa-code"></i> Site desenvolvido para execução em Docker/EC2 AWS</p>
         </div>
     </footer>
