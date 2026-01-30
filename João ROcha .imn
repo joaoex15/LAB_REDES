@@ -1,0 +1,403 @@
+node n1 {
+    type router
+    model PC
+    network-config {
+	hostname n1
+	!
+    }
+    canvas c1
+    iconcoords {453.0 21.0}
+    labelcoords {453.0 53.0}
+}
+
+node n2 {
+    type router
+    model router
+    network-config {
+	hostname n2
+	!
+    }
+    canvas c1
+    iconcoords {454.0 120.0}
+    labelcoords {454.0 152.0}
+}
+
+node n3 {
+    type hub
+    network-config {
+	hostname n3
+	!
+    }
+    canvas c1
+    iconcoords {457.0 225.0}
+    labelcoords {457.0 249.0}
+    interface-peer {e0 n4}
+    interface-peer {e1 n5}
+    interface-peer {e2 n6}
+    interface-peer {e3 n7}
+    interface-peer {e4 n8}
+    interface-peer {e5 n9}
+}
+
+node n4 {
+    type wlan
+    network-config {
+	hostname wlan4
+	!
+	interface wireless
+	 ip address 192.0.2.0/32
+	 ipv6 address 2001:db8:0::0/128
+	!
+	mobmodel
+	coreapi
+	basic_range
+	!
+    }
+    custom-config {
+	custom-config-id basic_range
+	custom-command {3 3 9 9 9}
+	config {
+	range=275
+	bandwidth=54000000
+	jitter=0
+	delay=20000
+	error=0
+	}
+    }
+    canvas c1
+    iconcoords {116.0 283.0}
+    labelcoords {116.0 315.0}
+    interface-peer {e0 n3}
+    interface-peer {e1 n10}
+}
+
+node n5 {
+    type wlan
+    network-config {
+	hostname wlan5
+	!
+	interface wireless
+	 ip address 192.0.2.0/32
+	 ipv6 address 2001:db8:0::0/128
+	!
+	mobmodel
+	coreapi
+	basic_range
+	!
+    }
+    custom-config {
+	custom-config-id basic_range
+	custom-command {3 3 9 9 9}
+	config {
+	range=275
+	bandwidth=54000000
+	jitter=0
+	delay=20000
+	error=0
+	}
+    }
+    canvas c1
+    iconcoords {237.0 393.0}
+    labelcoords {237.0 425.0}
+    interface-peer {e0 n3}
+    interface-peer {e1 n11}
+}
+
+node n6 {
+    type wlan
+    network-config {
+	hostname wlan6
+	!
+	interface wireless
+	 ip address 192.0.2.0/32
+	 ipv6 address 2001:db8:0::0/128
+	!
+	mobmodel
+	coreapi
+	basic_range
+	!
+    }
+    custom-config {
+	custom-config-id basic_range
+	custom-command {3 3 9 9 9}
+	config {
+	range=275
+	bandwidth=54000000
+	jitter=0
+	delay=20000
+	error=0
+	}
+    }
+    canvas c1
+    iconcoords {382.0 406.0}
+    labelcoords {382.0 438.0}
+    interface-peer {e0 n3}
+    interface-peer {e1 n12}
+}
+
+node n7 {
+    type wlan
+    network-config {
+	hostname wlan7
+	!
+	interface wireless
+	 ip address 192.0.2.0/32
+	 ipv6 address 2001:db8:0::0/128
+	!
+	mobmodel
+	coreapi
+	basic_range
+	!
+    }
+    custom-config {
+	custom-config-id basic_range
+	custom-command {3 3 9 9 9}
+	config {
+	range=275
+	bandwidth=54000000
+	jitter=0
+	delay=20000
+	error=0
+	}
+    }
+    canvas c1
+    iconcoords {520.0 403.0}
+    labelcoords {520.0 435.0}
+    interface-peer {e0 n3}
+    interface-peer {e1 n13}
+}
+
+node n8 {
+    type wlan
+    network-config {
+	hostname wlan8
+	!
+	interface wireless
+	 ip address 192.0.2.0/32
+	 ipv6 address 2001:db8:0::0/128
+	!
+	mobmodel
+	coreapi
+	basic_range
+	!
+    }
+    custom-config {
+	custom-config-id basic_range
+	custom-command {3 3 9 9 9}
+	config {
+	range=275
+	bandwidth=54000000
+	jitter=0
+	delay=20000
+	error=0
+	}
+    }
+    canvas c1
+    iconcoords {658.0 379.0}
+    labelcoords {658.0 411.0}
+    interface-peer {e0 n3}
+    interface-peer {e1 n14}
+}
+
+node n9 {
+    type wlan
+    network-config {
+	hostname wlan9
+	!
+	interface wireless
+	 ip address 192.0.2.0/32
+	 ipv6 address 2001:db8:0::0/128
+	!
+	mobmodel
+	coreapi
+	basic_range
+	!
+    }
+    custom-config {
+	custom-config-id basic_range
+	custom-command {3 3 9 9 9}
+	config {
+	range=275
+	bandwidth=54000000
+	jitter=0
+	delay=20000
+	error=0
+	}
+    }
+    canvas c1
+    iconcoords {745.0 294.0}
+    labelcoords {745.0 326.0}
+    interface-peer {e0 n3}
+    interface-peer {e1 n15}
+}
+
+node n10 {
+    type router
+    model PC
+    network-config {
+	hostname n10
+	!
+	interface eth0
+	 ip address 192.0.2.20/32
+	 ipv6 address 2001:db8:0::20/128
+	!
+    }
+    canvas c1
+    iconcoords {68.0 387.0}
+    labelcoords {68.0 419.0}
+    interface-peer {eth0 n4}
+}
+
+node n11 {
+    type router
+    model PC
+    network-config {
+	hostname n11
+	!
+	interface eth0
+	 ip address 192.0.2.21/32
+	 ipv6 address 2001:db8:0::21/128
+	!
+    }
+    canvas c1
+    iconcoords {228.0 518.0}
+    labelcoords {228.0 550.0}
+    interface-peer {eth0 n5}
+}
+
+node n12 {
+    type router
+    model PC
+    network-config {
+	hostname n12
+	!
+	interface eth0
+	 ip address 192.0.2.22/32
+	 ipv6 address 2001:db8:0::22/128
+	!
+    }
+    canvas c1
+    iconcoords {393.0 533.0}
+    labelcoords {393.0 565.0}
+    interface-peer {eth0 n6}
+}
+
+node n13 {
+    type router
+    model PC
+    network-config {
+	hostname n13
+	!
+	interface eth0
+	 ip address 192.0.2.23/32
+	 ipv6 address 2001:db8:0::23/128
+	!
+    }
+    canvas c1
+    iconcoords {540.0 528.0}
+    labelcoords {540.0 560.0}
+    interface-peer {eth0 n7}
+}
+
+node n14 {
+    type router
+    model PC
+    network-config {
+	hostname n14
+	!
+	interface eth0
+	 ip address 192.0.2.24/32
+	 ipv6 address 2001:db8:0::24/128
+	!
+    }
+    canvas c1
+    iconcoords {701.0 514.0}
+    labelcoords {701.0 546.0}
+    interface-peer {eth0 n8}
+}
+
+node n15 {
+    type router
+    model PC
+    network-config {
+	hostname n15
+	!
+	interface eth0
+	 ip address 192.0.2.25/32
+	 ipv6 address 2001:db8:0::25/128
+	!
+    }
+    canvas c1
+    iconcoords {839.0 383.0}
+    labelcoords {839.0 415.0}
+    interface-peer {eth0 n9}
+}
+
+link l1 {
+    nodes {n4 n3}
+}
+
+link l2 {
+    nodes {n5 n3}
+}
+
+link l3 {
+    nodes {n6 n3}
+}
+
+link l4 {
+    nodes {n7 n3}
+}
+
+link l5 {
+    nodes {n8 n3}
+}
+
+link l6 {
+    nodes {n9 n3}
+}
+
+link l7 {
+    nodes {n4 n10}
+}
+
+link l8 {
+    nodes {n5 n11}
+}
+
+link l9 {
+    nodes {n6 n12}
+}
+
+link l10 {
+    nodes {n7 n13}
+}
+
+link l11 {
+    nodes {n8 n14}
+}
+
+link l12 {
+    nodes {n9 n15}
+}
+
+canvas c1 {
+    name {Canvas1}
+}
+
+option global {
+    interface_names no
+    ip_addresses yes
+    ipv6_addresses yes
+    node_labels yes
+    link_labels yes
+    show_api no
+    background_images no
+    annotations yes
+    grid yes
+    traffic_start 0
+}
+
+option session {
+}
+
